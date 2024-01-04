@@ -12,6 +12,9 @@
 		0A1348652B474FFC00AC102C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1348642B474FFC00AC102C /* ContentView.swift */; };
 		0A1348672B474FFE00AC102C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A1348662B474FFE00AC102C /* Assets.xcassets */; };
 		0A13486A2B474FFE00AC102C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A1348692B474FFE00AC102C /* Preview Assets.xcassets */; };
+		0A1348732B47625000AC102C /* XCAFootballDataClient in Frameworks */ = {isa = PBXBuildFile; productRef = 0A1348722B47625000AC102C /* XCAFootballDataClient */; };
+		0A1348762B47635D00AC102C /* StandingsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1348752B47635D00AC102C /* StandingsTableView.swift */; };
+		0A1348792B4765D000AC102C /* StandingsTableObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1348782B4765D000AC102C /* StandingsTableObservable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,8 @@
 		0A1348662B474FFE00AC102C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A1348692B474FFE00AC102C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A13486B2B474FFE00AC102C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A1348752B47635D00AC102C /* StandingsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableView.swift; sourceTree = "<group>"; };
+		0A1348782B4765D000AC102C /* StandingsTableObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableObservable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +35,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A1348612B474FFC00AC102C /* RealityKitContent in Frameworks */,
+				0A1348732B47625000AC102C /* XCAFootballDataClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +62,8 @@
 		0A13485D2B474FFC00AC102C /* FCStats */ = {
 			isa = PBXGroup;
 			children = (
+				0A1348772B47659200AC102C /* Observables */,
+				0A1348742B47631F00AC102C /* Views */,
 				0A1348622B474FFC00AC102C /* FCStatsApp.swift */,
 				0A1348642B474FFC00AC102C /* ContentView.swift */,
 				0A1348662B474FFE00AC102C /* Assets.xcassets */,
@@ -81,6 +89,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		0A1348742B47631F00AC102C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A1348752B47635D00AC102C /* StandingsTableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0A1348772B47659200AC102C /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				0A1348782B4765D000AC102C /* StandingsTableObservable.swift */,
+			);
+			path = Observables;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,6 +123,7 @@
 			name = FCStats;
 			packageProductDependencies = (
 				0A1348602B474FFC00AC102C /* RealityKitContent */,
+				0A1348722B47625000AC102C /* XCAFootballDataClient */,
 			);
 			productName = FCStats;
 			productReference = 0A13485B2B474FFC00AC102C /* FCStats.app */;
@@ -128,6 +153,9 @@
 				Base,
 			);
 			mainGroup = 0A1348522B474FFC00AC102C;
+			packageReferences = (
+				0A1348712B47625000AC102C /* XCRemoteSwiftPackageReference "XCAFootballDataClient" */,
+			);
 			productRefGroup = 0A13485C2B474FFC00AC102C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -154,6 +182,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1348762B47635D00AC102C /* StandingsTableView.swift in Sources */,
+				0A1348792B4765D000AC102C /* StandingsTableObservable.swift in Sources */,
 				0A1348652B474FFC00AC102C /* ContentView.swift in Sources */,
 				0A1348632B474FFC00AC102C /* FCStatsApp.swift in Sources */,
 			);
@@ -356,10 +386,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		0A1348712B47625000AC102C /* XCRemoteSwiftPackageReference "XCAFootballDataClient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/XCAFootballDataClient";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		0A1348602B474FFC00AC102C /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealityKitContent;
+		};
+		0A1348722B47625000AC102C /* XCAFootballDataClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A1348712B47625000AC102C /* XCRemoteSwiftPackageReference "XCAFootballDataClient" */;
+			productName = XCAFootballDataClient;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
