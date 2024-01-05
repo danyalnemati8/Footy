@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+//declared as a global variable
+let apiKey = "1c080af260bc4c69879b9ae5fd03e4f7"
 
 @main
 struct FCStatsApp: App {

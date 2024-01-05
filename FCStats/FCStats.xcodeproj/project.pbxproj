@@ -15,6 +15,7 @@
 		0A1348732B47625000AC102C /* XCAFootballDataClient in Frameworks */ = {isa = PBXBuildFile; productRef = 0A1348722B47625000AC102C /* XCAFootballDataClient */; };
 		0A1348762B47635D00AC102C /* StandingsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1348752B47635D00AC102C /* StandingsTableView.swift */; };
 		0A1348792B4765D000AC102C /* StandingsTableObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1348782B4765D000AC102C /* StandingsTableObservable.swift */; };
+		0A13487B2B4767CE00AC102C /* FetchPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A13487A2B4767CE00AC102C /* FetchPhase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		0A13486B2B474FFE00AC102C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A1348752B47635D00AC102C /* StandingsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableView.swift; sourceTree = "<group>"; };
 		0A1348782B4765D000AC102C /* StandingsTableObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableObservable.swift; sourceTree = "<group>"; };
+		0A13487A2B4767CE00AC102C /* FetchPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPhase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				0A1348662B474FFE00AC102C /* Assets.xcassets */,
 				0A13486B2B474FFE00AC102C /* Info.plist */,
 				0A1348682B474FFE00AC102C /* Preview Content */,
+				0A13487A2B4767CE00AC102C /* FetchPhase.swift */,
 			);
 			path = FCStats;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A13487B2B4767CE00AC102C /* FetchPhase.swift in Sources */,
 				0A1348762B47635D00AC102C /* StandingsTableView.swift in Sources */,
 				0A1348792B4765D000AC102C /* StandingsTableObservable.swift in Sources */,
 				0A1348652B474FFC00AC102C /* ContentView.swift in Sources */,
