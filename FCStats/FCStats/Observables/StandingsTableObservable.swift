@@ -21,9 +21,24 @@ class StandingsTableObservable {
         fetchPhase = .fetching
         do {
             let standings = try await client.fetchStandings(competitionId: competition.id)
+            if Task.isCancelled {
+                return
+            }
+            fetchPhase = .success(standings)
         } catch {
+            if Task.isCancelled {
+                return
+            }
             fetchPhase = .failure(error)
         }
     }
     
+    
+}
+extension TeamStandingTable {
+    static var stubs: [TeamStandingTable] {
+        let url = Bundle.main.url(forResource: "standings", withExtension: "json")!
+        let standingResponse: StandingResponse = Utilities.loadStub(url: url)
+        return standingResponse.standings!.first { $0.type == "TOTAL"}!.table
+    }
 }
