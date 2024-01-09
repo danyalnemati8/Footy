@@ -18,19 +18,20 @@ class StandingsTableObservable {
     var standings: [TeamStandingTable]? {fetchPhase.value}
     
     func fetchStandings(competition: Competition) async {
-        fetchPhase = .fetching
-        do {
-            let standings = try await client.fetchStandings(competitionId: competition.id)
-            if Task.isCancelled {
-                return
-            }
-            fetchPhase = .success(standings)
-        } catch {
-            if Task.isCancelled {
-                return
-            }
-            fetchPhase = .failure(error)
-        }
+//        fetchPhase = .fetching
+//        do {
+//            let standings = try await client.fetchStandings(competitionId: competition.id)
+//            if Task.isCancelled {
+//                return
+//            }
+//            fetchPhase = .success(standings)
+//        } catch {
+//            if Task.isCancelled {
+//                return
+//            }
+//            fetchPhase = .failure(error)
+//        }
+        fetchPhase = .success(TeamStandingTable.stubs)
     }
     
     
