@@ -16,6 +16,9 @@
 		0A1348762B47635D00AC102C /* StandingsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1348752B47635D00AC102C /* StandingsTableView.swift */; };
 		0A1348792B4765D000AC102C /* StandingsTableObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1348782B4765D000AC102C /* StandingsTableObservable.swift */; };
 		0A13487B2B4767CE00AC102C /* FetchPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A13487A2B4767CE00AC102C /* FetchPhase.swift */; };
+		0A13487E2B4CC0E900AC102C /* scorers.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A13487D2B4CC0E900AC102C /* scorers.json */; };
+		0A1348802B4CC10000AC102C /* standings.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A13487F2B4CC10000AC102C /* standings.json */; };
+		0A1348822B4CC72A00AC102C /* Uitility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1348812B4CC72A00AC102C /* Uitility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		0A1348752B47635D00AC102C /* StandingsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableView.swift; sourceTree = "<group>"; };
 		0A1348782B4765D000AC102C /* StandingsTableObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableObservable.swift; sourceTree = "<group>"; };
 		0A13487A2B4767CE00AC102C /* FetchPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPhase.swift; sourceTree = "<group>"; };
+		0A13487D2B4CC0E900AC102C /* scorers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scorers.json; sourceTree = "<group>"; };
+		0A13487F2B4CC10000AC102C /* standings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = standings.json; sourceTree = "<group>"; };
+		0A1348812B4CC72A00AC102C /* Uitility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uitility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 		0A13485D2B474FFC00AC102C /* FCStats */ = {
 			isa = PBXGroup;
 			children = (
+				0A13487C2B4CC0B500AC102C /* Stubs */,
 				0A1348772B47659200AC102C /* Observables */,
 				0A1348742B47631F00AC102C /* Views */,
 				0A1348622B474FFC00AC102C /* FCStatsApp.swift */,
@@ -72,6 +79,7 @@
 				0A13486B2B474FFE00AC102C /* Info.plist */,
 				0A1348682B474FFE00AC102C /* Preview Content */,
 				0A13487A2B4767CE00AC102C /* FetchPhase.swift */,
+				0A1348812B4CC72A00AC102C /* Uitility.swift */,
 			);
 			path = FCStats;
 			sourceTree = "<group>";
@@ -106,6 +114,15 @@
 				0A1348782B4765D000AC102C /* StandingsTableObservable.swift */,
 			);
 			path = Observables;
+			sourceTree = "<group>";
+		};
+		0A13487C2B4CC0B500AC102C /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				0A13487D2B4CC0E900AC102C /* scorers.json */,
+				0A13487F2B4CC10000AC102C /* standings.json */,
+			);
+			path = Stubs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +190,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A13487E2B4CC0E900AC102C /* scorers.json in Resources */,
+				0A1348802B4CC10000AC102C /* standings.json in Resources */,
 				0A13486A2B474FFE00AC102C /* Preview Assets.xcassets in Resources */,
 				0A1348672B474FFE00AC102C /* Assets.xcassets in Resources */,
 			);
@@ -185,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1348822B4CC72A00AC102C /* Uitility.swift in Sources */,
 				0A13487B2B4767CE00AC102C /* FetchPhase.swift in Sources */,
 				0A1348762B47635D00AC102C /* StandingsTableView.swift in Sources */,
 				0A1348792B4765D000AC102C /* StandingsTableObservable.swift in Sources */,
