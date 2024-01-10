@@ -8,6 +8,7 @@
 import SwiftUI
 import XCAFootballDataClient
 
+
 struct StandingsTableView: View {
     
     let competition: Competition
@@ -17,7 +18,17 @@ struct StandingsTableView: View {
         Table(of: TeamStandingTable.self) {
             TableColumn("Club") { team in
                 HStack {
+                    Text(team.positionText).fontWeight(.bold)
+                        .frame(minWidth:20)
                     
+                    AsyncImage(url: URL(string: team.team.crest ?? "")){phase
+                        in switch phase {
+                        case .success(let image):
+                            image.resizable()
+                        default:
+                            Circle().foregroundStyle(Color.gray.opacity(0.5))
+                        }}
+                    .frame(width: 40, height:40)
                 }
             }
             .width(min: 264)

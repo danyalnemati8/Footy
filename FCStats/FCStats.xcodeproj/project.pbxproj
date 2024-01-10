@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -175,6 +175,9 @@
 			mainGroup = 0A1348522B474FFC00AC102C;
 			packageReferences = (
 				0A1348712B47625000AC102C /* XCRemoteSwiftPackageReference "XCAFootballDataClient" */,
+				0A1348842B4E3B8700AC102C /* XCRemoteSwiftPackageReference "SVGImageSwiftUI" */,
+				0A1348852B4E3C7100AC102C /* XCLocalSwiftPackageReference "" */,
+				0A9BB6DD2B4E3F0400678656 /* XCRemoteSwiftPackageReference "SVGKit" */,
 			);
 			productRefGroup = 0A13485C2B474FFC00AC102C /* Products */;
 			projectDirPath = "";
@@ -410,6 +413,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		0A1348852B4E3C7100AC102C /* XCLocalSwiftPackageReference "" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "";
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		0A1348712B47625000AC102C /* XCRemoteSwiftPackageReference "XCAFootballDataClient" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -417,6 +427,23 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 0.1.0;
+			};
+		};
+		0A1348842B4E3B8700AC102C /* XCRemoteSwiftPackageReference "SVGImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/SVGImageSwiftUI";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 1.0.0;
+				minimumVersion = 0.2.0;
+			};
+		};
+		0A9BB6DD2B4E3F0400678656 /* XCRemoteSwiftPackageReference "SVGKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SVGKit/SVGKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
